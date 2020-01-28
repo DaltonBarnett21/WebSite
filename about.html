@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <meta name="decription" content="Affordable and professional web design">
+   <meta name="keywords" content="web design, affordable web design, professional">
+   <meta name="author" content="Dalton Barnett">
+   <title>Fusion Web Design | About</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+         function getEmail(){
+            CustEmail = document.getElementsByClassName('Button1');
+         if (CustEmail == "") {
+            alert('No Data Entered');
+            return false
+         }
+         else{
+            alert('Thank you for subscribing!');
+         }
+         }
+         function saveCustomerFrm()
+          {
+
+               
+                        
+        // Get the data from each element on the form.
+    	  customerFName = document.getElementById('txtFirstName');
+          customerLastName = document.getElementById('txtLastName');
+          customerEmail = document.getElementById('txtEmail');
+          customerType = document.getElementById('custType');
+          CustomerInstructions = document.getElementById('msg');
+        
+        // This variable stores all the data.
+        let NewCustomer = 
+            '\r First Name: ' + customerFName.value + ' \r\n ' + 
+            'Last Name: ' +customerLastName.value + ' \r\n ' + 
+            'Email: ' + customerEmail.value + ' \r\n ' + 
+            'Type: ' + customerType.value + ' \r\n ' + 
+            'Instructions: ' + CustomerInstructions.value;
+            alert(NewCustomer);
+
+          }
+         function manageCustomers(choice)
+         { 
+            // hideForm(); 
+             //options 
+             switch(choice)
+             { //switch statement strart 
+                case "view": 
+                    alert ("Customer info is being viewed.. wait a minute... ");
+                    break; 
+                case "add": 
+                    showForm(); 
+                    alert("Customer info is being inserted into the database");
+                    //saveCustomerFrm();
+               showForm()
+    
+                    break; 
+                case "update": 
+                    alert ("Customer info is being modified"); 
+                    break; 
+                case "delete":
+                    alert ("Customer is about to be deleted"); 
+                    break; 
+
+             }//switch statement ends 
+         }//function 
+
+         function hideForm()
+          { 
+              //document.getElementByID("AddCustFrm").style.visibility = "hidden";
+  document.getElementById("AddCustFrm").style.visibility = "hidden";  
+
+          }
+        
+           function showForm()
+          { 
+             document.getElementById ("AddCustFrm").style.visibility = "visible";
+
+          }
+   </script>
+
+</head>
+<body>
+   <header>
+     <div class="container">
+        <div id="branding">
+           <h1><span class=highlight>Dalton Barnett</span> Web Design</h1>
+        </div>
+        
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </nav>
+     
+     </div>
+   </header>
+
+
+
+   <section id="newsletter">
+       <div class="container">
+          <h1>Subscribe To Our Newsletter</h1> 
+          <form>
+              <input type="email" placeholder="Enter Email..">
+              <button type="submit" onclick ="getEmail()" class="button1">Subscribe</button>
+          </form>
+       </div>
+
+   </section>
+
+   <section id="main">
+       <div class="container">
+       <article id="main-col">
+          <h1 class="page-title">About Me</h1>
+          <p class="dark">
+           I'm currently pursuing a bachelors degree in Computer Science at Northeastern State University. I'm located in
+           the Muskogee, Ok area and wanting to work in web development. I'm also willing to relocate if necessary. 
+          </p>
+         </article>
+
+         <aside id="sidebar">
+            <div class="dark">
+            <h3>Skills</h3>
+            <p>C++, C#, Java, JavaScript, Python, HTML, CSS. </p>
+            </div>  
+
+         </aside>
+       </div>
+     
+    <div id="manangeInfo">
+    <body onload = "hideForm()"> 
+         <h1 id="logo"> Manage Info </h1>
+         <form> 
+     
+     
+     
+             <p id="lists"> 
+                     <label> Select List Example </label>
+                     <select name = "aa" onchange="manageCustomers(this.value)" > 
+                         <option value = "">Please select an option from the list </option>
+                         <option value = "add">Subscribe to our Newsletter. </option> 
+                         <option value  = "update">Modify  info.</option>
+                         <option value = "delete"> Unsubscribe. </option>
+                         
+                     </select>
+             </p>
+         </form>
+         </div>
+     
+         <br><br> 
+         <!--new form for input -->
+          <form id = AddCustFrm> 
+              <div id = "div1"> 
+                 
+                 <input type "text" id = "txtFirstName" placeholder= "First Name: " />
+              </div>
+              <div id="div2">
+                 <input type = "text" id = "txtLastName"  placeholder= "Last Name: " />
+             </div>
+             <div id="div3">
+                 <input type = "text" id = "txtEmail" placeholder="Email: " /> 
+             </div>
+     
+             <div > 
+                 <select id = "custType"> 
+                     <option Select Value = "">--Select Customer Type --</option>
+                      <option value = "NewInd">New Individual Customer</option> 
+                      <option value = "newBus">New Business Customer </option>  
+                      <option value = "guest"> One Time Shopper</option>
+                 </select>
+              </div>
+     
+             <div> 
+                 <textarea id= "msg"  name="msg"  placeholder = "Special instructions about the order.... ">
+                
+                 </textarea>
+                 <div> 
+                    <input type = "submit" id = "submitBttn"   onclick="saveCustomerFrm()"> </> 
+     
+                
+             </div>
+            
+     
+     
+          </form>
+     
+     </body>
+    </section>
+   </div>
+   </body>
+</div>
+</html>

@@ -1,0 +1,285 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height:1.5;
+    padding: 0;
+    margin: 0;
+    background-color:#4A4063 ;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button1{
+    height: 38px;
+    background:#800029 ;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.dark{
+    padding: 15px;
+    background:#202030 ;
+    color: white;
+    margin-top: 10px;
+    scroll-margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px 15px 5px #000000; 
+     box-shadow: 2px 3px 15px 5px #000000;
+
+}
+
+.page-title{
+    color: white;
+}
+/* form */
+
+#AddCustFrm{
+    position: absolute;
+    top: 90%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 180px;
+    background:#202030;
+    padding: 35px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px 15px 5px #000000; 
+     box-shadow: 2px 3px 15px 5px #000000;
+}
+#manangeInfo{
+    position: absolute;
+    top: 80%;
+    left: 78%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 205px;
+    background:#202030;
+    padding: 35px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px 15px 5px #000000; 
+     box-shadow: 2px 3px 15px 5px #000000;
+}
+#logo{
+    color: white;
+}
+#lists{
+    color: white;
+}
+#txtFirstName{
+    height: 25px;
+    resize: none;
+    
+}
+#div1{
+    height: 60px;
+    resize: none;
+    
+}
+#txtLastName{
+    height: 25px;
+    resize: none;
+    
+}
+#div2{
+    height: 60px;
+    resize: none;
+    
+}
+#txtEmail{
+    height: 25px;
+    resize: none;
+    
+}
+#div3{
+    height: 60px;
+    resize: none;
+    
+}
+#msg{
+    height: 50px;
+    top: 50%;
+
+    
+}
+
+#custType{
+    
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+#submitBttn{
+    height: 35px;
+    background:#800029 ;
+    border: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: white;
+}
+.wrapper .btn input[type="submit"]{
+    border:o;
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    background:#800029 ;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.wrapper .input_field{
+    margin-bottom: 10px;
+}
+.wrapper .input_field input[type = text],.wrapper textarea{
+    width: 100px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+
+#contactme{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* header */
+header{
+    background:#202030;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:#6D466B 3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul{
+     margin: 0;
+     padding:0;
+}
+header li{
+    
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+ header #branding{
+     float: left;
+ }
+ header #branding h1{
+     margin: 0;
+ }
+ header nav{
+     float: right;
+     margin-top: 13px;
+ }
+ header .highlight, header .current a{
+     color:#6D466B ;
+     font-weight: bold;
+ }
+ header a:hover{
+     color:#9D69A3;
+     font-weight: bold;
+ }
+
+ /*showcase*/
+ #showcase{
+     min-height:700px;
+     width: 1350px;
+     height:100px;
+     background-image: url('Images/sammy-joonhee-jkANttf0x1A-unsplash.jpg');
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-position-x: inherit;
+     background-size: cover;
+     background-position-y: center;
+     text-align: center;
+     color: white;
+}
+
+#showcase h1{
+      margin-top: 100px;
+      font-size: 55px;
+      margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size:20px ;
+}
+
+#newsletter{
+    padding: 15px;
+    color: white;
+    background-color:#202030;
+}
+
+/*newsletter*/
+#newsletter h1{
+    float:left
+}
+
+#newsletter form{
+    margin-top: 25px;
+    float:right
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/*boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box image{
+    width: 90px;
+}
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 5px;
+   
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+    
+}
+
+footer{
+    padding: 20px;
+    margin: 0px;
+    color: white;
+    background-color:#800029 ;
+    text-align:center ;
+
+}
